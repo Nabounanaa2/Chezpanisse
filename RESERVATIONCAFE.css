@@ -1,9 +1,120 @@
-body {
+main{
+    padding: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+h1{
+    color: #677179;
+}
+
+p{
+    color: #606060;
+}
+
+#line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    cursor: row-resize;
+}
+
+.reservation-button {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+  
+.resy-button {
+    background-color: white;
+    color: red;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+  
+.reservation-button:hover,
+.resy-button:hover {
+    opacity: 0.9;
+}
+  
+
+footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
-footer {
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px; /* Ajuste cette valeur selon tes besoins */
 }
+
+  .footer-line {
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 30px;
+  }
+
+  .menu-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 02px;
+    
+  }
+  
+  .menu-footer li {
+    margin: 0 08px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .menu-footer li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu-footer li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-footer li.flex-item {
+    flex: 0 0 100%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .menu-footer li.flex-item {
+      flex-basis: auto;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: -160px; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }

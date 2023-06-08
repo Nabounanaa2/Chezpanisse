@@ -1,9 +1,131 @@
-body {
+main{
+    padding: 100px;
+    margin-left: 250px;
+    margin-right: 200px;
+}
+.formulaire {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+form {
+    margin: 20px;
+    margin-left: -150px;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #D6D6CA;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button.inscription-button {
+    display: block;
+    width: 40%;
+    padding: 20px;
+    margin-top: 10px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+  
+#line {
+    width: 70%;
+    height: 1px;
+    background-color: black;
+    cursor: row-resize;
+}
+
+a.lier {
+    color: #000;
+    text-decoration: underline;
+}
+
+.smaller-text {
+    font-size: 14px;
+}
+
+.smaller-text {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
-footer {
-    text-align: center;
+    margin: 0 auto;
+    max-width: 1100px; /* Ajuste cette valeur selon tes besoins */
+    padding: 05px;    
 }
+  
+  .menu-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 02px;
+    
+  }
+  
+  .menu-footer li {
+    margin: 0 08px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .menu-footer li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu-footer li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-footer li.flex-item {
+    flex: 0 0 100%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .menu-footer li.flex-item {
+      flex-basis: auto;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: -160px; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

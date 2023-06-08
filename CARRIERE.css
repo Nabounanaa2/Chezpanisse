@@ -1,15 +1,104 @@
-body {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    }
-main {
-        text-align: center;
-    }  
-footer {
-    text-align: center;
+    height: 300px;
+    padding: 60px;
 }
+          
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.para {
+   text-align: center;
+}
+
+a.email-link {
+    color: #000;
+    text-decoration: underline;
+  }
+      
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1100px; /* Ajuste cette valeur selon tes besoins */
+    padding: 20px;
+   
+    
+  }
+
+  .footer-line {
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 30px;
+  }
+
+  .menu-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 02px;
+    
+  }
+  
+  .menu-footer li {
+    margin: 0 08px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .menu-footer li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu-footer li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-footer li.flex-item {
+    flex: 0 0 100%;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .menu-footer li.flex-item {
+      flex-basis: auto;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: -160px; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
 
 
   

@@ -1,63 +1,81 @@
-*body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
+.demai {
+  padding: 20px;
+  padding-left: 300px;
+  padding-right: 250px;
+}
 
+.phrase-container p {
+  font-size: 14px; /* Définir la taille de police souhaitée */
+}
 
-
-    footer {
-        display: flex;
-        justify-content: center;
-      }
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px; /* Ajuste cette valeur selon tes besoins */
+  padding: 30px;
+}
+    
+.menu-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 02px;
       
-      footer {
-        display: flex;
-        justify-content: center;
-      }
-      
-      
-      nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-      }
-      
-      
-      nav ul li {
-        margin: 0 10px;
-      }
-      
-      
-      nav ul li a {
-        text-decoration: none;
-        color: #333;
-      }
-      
-      
-      nav ul li:hover > ul {
-          display: block;
-      }
-       
-      nav ul ul {
-          display: none;
-          position: absolute;
-          top: 100%;
-      }
-       
-      nav ul ul li {
-          width: 200px;
-          float: none;
-          display: list-item;
-          position: relative;
-      }
-       
-      nav ul ul ul li {
-          position: relative;
-      }
-      
-      footer nav ul li:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
+}
+    
+.menu-footer li {
+  margin: 0 08px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+    
+.menu-footer li a {
+  color: #000;
+  text-decoration: none;
+}
+    
+.menu-footer li a:hover {
+  text-decoration: underline;
+}
+    
+.menu-footer li.flex-item {
+  flex: 0 0 100%;
+}
+    
+@media screen and (max-width: 480px) {
+  .menu-footer li.flex-item {
+  flex-basis: auto;
+}
+}
+    
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+    
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: -160px; 
+}
+    
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+    
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
